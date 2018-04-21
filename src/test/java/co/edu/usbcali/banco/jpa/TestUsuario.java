@@ -38,21 +38,21 @@ class TestUsuario {
 		String jpql = "SELECT usu FROM Usuario usu";
 		List<Usuario> losusuarios=entityManager.createQuery(jpql).getResultList();
 		
-		/*ForEach Java 8*/
+		/*ForEach Java 8
 		losusuarios.forEach(usuario->{
 			log.info("Usuario: "+usuario.getUsuUsuario());
 			log.info("Nombre: "+usuario.getNombre());
 			log.info("Identificacion: "+ usuario.getIdentificacion());
 			log.info("Estado: "+usuario.getActivo());
-		});
+		});*/
 		
-		/* tradicional
+		
 		for (Usuario usuario : losusuarios) {
 			log.info("Usuario: "+usuario.getUsuUsuario());
 			log.info("Nombre: "+usuario.getNombre());
 			log.info("Identificacion: "+ usuario.getIdentificacion());
 			log.info("Estado: "+usuario.getActivo());
-		}*/
+		}
 		
 		
 	}
