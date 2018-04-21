@@ -39,17 +39,17 @@ class TestCliente {
 		String jpql = "SELECT cli FROM Cliente cli";
 		List<Cliente> losclientes=entityManager.createQuery(jpql).getResultList();
 		
-		/*ForEach Java 8*/
+		/*ForEach Java 8
 		losclientes.forEach(cliente->{
 			log.info("Id: "+cliente.getClieId());
 			log.info("Nombre: "+cliente.getNombre());
-		});
+		});*/
 		
-		/* tradicional
+		
 		for (Cliente cliente : losclientes) {
 			log.info("Id: "+cliente.getClieId());
 			log.info("Nombre: "+cliente.getNombre());
-		}*/
+		}
 		
 		
 	}
